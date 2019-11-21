@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To-Do List</title>
+    <link rel="stylesheet" type="text/css" href="css/file.css" />
+    
+</head>
+<body>
+    <header>
+        <h1>My List</h1>
+    </header>
+    <main>
+        <form action="#" method="get" id="addForm">
+            <label for="listText">To-Do List</label>
+            <input id="listText" type="text" name="listText">
+            <input id="add-img" type="image" src="img/add_img.jpg" alt="Add a To Do">
+        </form>
+    <form action="#" method="get" id="listForm">
+            <ul id="todo-myList">
+                
+            </ul>
+        </form>
+    </main>
+    <footer>
+        copyright &copy; Sneha Ratakonda 
+    </footer>
+    <template id="item-lists">
+        <li>
+            <input id="todo-checkbox" type="checkbox" name="todo-checkbox" onclick="checkBoxUpdate(this)">
+            <label for="todo-checkbox"></label>
+        </li>
+    </template>
+    <script src="js/myList.js"></script>
+</body>
+</html>

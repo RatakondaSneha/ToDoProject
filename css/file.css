@@ -1,0 +1,105 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+    color: inherit;
+}
+:root,html
+body {
+    height: 100%;
+}
+#add-img {
+    width: 5rem;
+    height: 5rem;  
+}
+main{
+    height:60%;
+}
+html {
+    box-sizing: border-box;
+    font-size: calc(1rem + (3) * ((100vw - 300px) / (1080 - 300)));
+}
+
+
+input[type=checkbox] {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+input[type=checkbox] + label {
+    position: relative;
+}
+
+input[type=checkbox] + label::before {
+    content: '';
+    position: absolute;
+    top: 0.1em;
+    left: -1.5em;
+    width: 1em;
+    height: .75em;
+    border: thin solid lightgray;
+    margin-right: 1em;
+    padding: 0 .1em 1.1em .1em;
+}
+
+input[type=checkbox]:focus + label::before {
+    outline: rgb(59, 153, 252) solid 0.1em;
+}
+
+input[type=checkbox]:checked + label::before {
+    content: '🗸';
+}
+
+input[type="text"]{
+    border: 1px solid #000;
+}
+    
+    
+
+    header h1 {
+        font-size: 3.5rem;
+        text-align: center  ;
+    }
+    #listForm{
+        display: flex;
+    justify-content: center;
+    height: calc(100% - 3rem);
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 60%;
+    }
+    #addForm
+    {
+    display: flex;
+    height: 6em;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 0.1em solid black;
+    }
+    
+   
+    #todo-myList{
+    display: grid;
+    grid-template-columns: max-content;
+    grid-auto-rows: max-content;
+    height: 100%;
+    font-size: 1.3rem;
+    list-style: none;
+    list-style-position: inside;
+    }
+    #todo-myList > li{
+        height: 3em;
+
+    }
+    /* Footer */
+footer {
+    border-top: 0.1em solid black;
+    text-align: center;
+}
