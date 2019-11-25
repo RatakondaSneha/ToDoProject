@@ -11,6 +11,8 @@
 :root,html
 body {
     height: 100%;
+    background-color: yellowgreen;
+    
 }
 #add-img {
     width: 5rem;
@@ -18,6 +20,7 @@ body {
 }
 main{
     height:60%;
+    background-color: yellow;
 }
 html {
     box-sizing: border-box;
@@ -64,6 +67,10 @@ input[type="text"]{
     header h1 {
         font-size: 3.5rem;
         text-align: center  ;
+        text-decoration-color: blue;
+         
+        background-color: chocolate;
+        font-style: inherit;
     }
     #listForm{
         display: flex;
@@ -72,6 +79,7 @@ input[type="text"]{
     overflow-x: hidden;
     overflow-y: auto;
     height: 60%;
+    background-color: plum;
     }
     #addForm
     {
@@ -82,6 +90,8 @@ input[type="text"]{
     justify-content: space-evenly;
     align-items: center;
     border-bottom: 0.1em solid black;
+    background-color: cyan;
+
     }
     
    
@@ -96,6 +106,7 @@ input[type="text"]{
     }
     #todo-myList > li{
         height: 3em;
+        
 
     }
     /* Footer */
