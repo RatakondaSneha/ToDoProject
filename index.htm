@@ -6,6 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>To-Do List</title>
     <link rel="stylesheet" type="text/css" href="css/file.css" />
+
+    <script>
+        if ('serviceWorker' in navigator) {
+           window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js');
+            });
+        }
+    </script>
+    
     
 </head>
 <body>
