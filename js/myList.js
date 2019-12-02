@@ -33,6 +33,13 @@ function addNewList()
 
 }
 
+function todoDelete(elem){
+const key = elem.parentNode.querySelector("input[type=checkbox]").id;
+const database=window.localStorage;
+database.removeItem(key);
+elem.parentNode.remove();
+}
+
 function checkBoxUpdate(checkbox) {
    
     if (checkbox.checked) {
