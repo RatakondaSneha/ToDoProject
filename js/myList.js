@@ -63,10 +63,10 @@ function bindAddEventListener()
     linkToDos();
 
     window.addEventListener('online', (event) => {
-        document.getElementById("messageID").innerHTML = "Application is offline";
+        document.getElementById("messageID").innerHTML = "Connection is back";
     });
     window.addEventListener('offline', (event) => {
-        document.getElementById("messageID").innerHTML = "Connection is back";
+        document.getElementById("messageID").innerHTML = "Application is offline";
     });
 }
 
