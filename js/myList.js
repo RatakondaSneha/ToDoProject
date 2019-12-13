@@ -61,6 +61,13 @@ function bindAddEventListener()
     let btn = document.querySelector('#add-img');
     btn.addEventListener('click', addNewList);
     linkToDos();
+
+    window.addEventListener('online', (event) => {
+        document.getElementById("messageID").innerHTML = "Application is offline";
+    });
+    window.addEventListener('offline', (event) => {
+        document.getElementById("messageID").innerHTML = "Connection is back";
+    });
 }
 
 function linkToDos(){
